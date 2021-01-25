@@ -1,0 +1,41 @@
+.bg-p-cover {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../img/fon-sm.jpg");
+    animation: anime 60s 1;
+    background-size: 140%;
+}
+h2.card-title{
+    font-size:1.5rem;
+  }
+  .nav-link {
+    color: #fff;
+    border-bottom: 0.25rem solid rgba(255, 255, 255, 0.0);
+    transition: border-bottom 0.5s;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@keyframes anime {
+    50% {
+        background-position: top right;
+    }
+}
+@media (min-width:768px) {
+    .bg-p-cover {
+        background-size: 100%;
+        background-image: url("../img/fon-md.jpg");
+    }
+}
+
+@media (min-width:1200px) {
+    .bg-p-cover {
+        background-image: url("../img/fon.jpg");
+    }
+}
